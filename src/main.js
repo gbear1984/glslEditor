@@ -12,6 +12,11 @@ const url = require('url');
 // be closed automatically when the JavaScript object is garbage collected.
 
 
+function getEntryPage() {
+    return process.argv.indexOf('--node-viewer') !== -1 ? 'nodeViewer.html' : 'index.html';
+}
+
+
 function createWindow () {
     // Create the browser window.
     mainWindow = new BrowserWindow({
@@ -24,7 +29,7 @@ function createWindow () {
     mainWindow.setTitle('GlslEditor');
     // and load the index.html of the app.
     mainWindow.loadURL(url.format({
-        pathname: path.join(__dirname, 'index.html'),
+        pathname: path.join(__dirname, getEntryPage()),
         protocol: 'file:',
         slashes: true
     }));

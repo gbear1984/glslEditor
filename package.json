@@ -11,7 +11,8 @@
     "package-all": "electron-packager . --out ./build --overwrite --all",
     "postinstall": "ln -nsf ../src/js node_modules/app",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint *.js src/"
+    "lint": "eslint *.js src/",
+    "start:node-viewer": "electron . --node-viewer"
   },
   "repository": {
     "type": "git",

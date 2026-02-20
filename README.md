@@ -98,6 +98,17 @@ For use just do:
 npm run start
 ```
 
+### Node based image + text viewer
+
+A lightweight node-graph viewer is available for JPG/PNG review with freeform text notes, grouping, and comment fields.
+
+- Run in Chrome by opening `src/nodeViewer.html`.
+- Run as a desktop app (Electron) with:
+
+```bash
+npm run start:node-viewer
+```
+
 
 ## TODOs
 

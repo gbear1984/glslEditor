@@ -1,0 +1,147 @@
+:root {
+  --bg: #11161d;
+  --panel: #1c2430;
+  --panel-border: #2b3747;
+  --text: #dce3f0;
+  --muted: #8e9bb0;
+  --accent: #58a6ff;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Inter, "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--bg);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.toolbar {
+  border-right: 1px solid var(--panel-border);
+  background: #0d1319;
+  padding: 16px;
+}
+
+.toolbar h1 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.toolbar button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  color: var(--text);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.toolbar button:hover {
+  border-color: var(--accent);
+}
+
+.hint {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.workspace {
+  position: relative;
+  overflow: auto;
+  min-height: 100vh;
+  background-image: radial-gradient(circle at 1px 1px, #203045 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+.connections {
+  position: absolute;
+  inset: 0;
+  width: 2000px;
+  height: 2000px;
+  pointer-events: none;
+}
+
+.node {
+  position: absolute;
+  min-width: 260px;
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.node-header {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--panel-border);
+  cursor: move;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.node-content {
+  padding: 10px;
+}
+
+.node textarea,
+.node input[type="text"],
+.node input[type="file"] {
+  width: 100%;
+  margin-top: 8px;
+  background: #111823;
+  border: 1px solid #2b3747;
+  color: var(--text);
+  border-radius: 6px;
+  padding: 7px;
+}
+
+.node img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+  border: 1px solid var(--panel-border);
+  margin-top: 8px;
+  border-radius: 6px;
+  background: #0f141b;
+}
+
+.node .actions {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+.node .actions button {
+  flex: 1;
+  border: 1px solid var(--panel-border);
+  background: #111823;
+  color: var(--text);
+  border-radius: 6px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.node .actions button:hover {
+  border-color: var(--accent);
+}
+
+.group {
+  border-style: dashed;
+  border-width: 2px;
+  border-color: #6887b0;
+  background: rgba(88, 166, 255, 0.07);
+  min-width: 360px;
+  min-height: 220px;
+}
+
+.group .node-content {
+  min-height: 170px;
+}
