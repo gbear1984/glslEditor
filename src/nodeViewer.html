@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Image + Text Viewer</title>
+    <link rel="stylesheet" href="./css/nodeViewer.css">
+  </head>
+  <body>
+    <aside class="toolbar">
+      <h1>Viewer Graph</h1>
+      <button id="add-image" type="button">Add image node</button>
+      <button id="add-text" type="button">Add text node</button>
+      <button id="add-group" type="button">Add group</button>
+      <p class="hint">Tip: drag nodes by the header and use "Connect from" then "Connect to this".</p>
+    </aside>
+
+    <main id="workspace" class="workspace">
+      <svg id="connections" class="connections"></svg>
+    </main>
+
+    <script src="./js/nodeViewer.js"></script>
+  </body>
+</html>
