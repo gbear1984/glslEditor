@@ -1,0 +1,16 @@
+{
+  "name": "Jewelry",
+  "folders": [
+    "DESIGN",
+    "REFERENCES",
+    "MATERIALS",
+    "GEMS",
+    "RENDERS",
+    "MANUFACTURING",
+    "SUPPLIERS",
+    "COSTING",
+    "AI_PROMPTS",
+    "NOTES",
+    "_index"
+  ]
+}
