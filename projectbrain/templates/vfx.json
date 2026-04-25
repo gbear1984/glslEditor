@@ -1,0 +1,17 @@
+{
+  "name": "VFX",
+  "folders": [
+    "Anim",
+    "FX",
+    "LIGHT",
+    "COMP",
+    "REFERENCE",
+    "TEXTURES",
+    "CODE",
+    "ART",
+    "REALTIME",
+    "AI_PROMPTS",
+    "NOTES",
+    "_index"
+  ]
+}

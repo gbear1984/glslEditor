@@ -1,0 +1,15 @@
+{
+  "name": "Music",
+  "folders": [
+    "TRACKS",
+    "LYRICS",
+    "STEMS",
+    "MIX",
+    "MASTER",
+    "ARTWORK",
+    "REFERENCE",
+    "AI_PROMPTS",
+    "NOTES",
+    "_index"
+  ]
+}
